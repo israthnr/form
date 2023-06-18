@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.toolbox-list{
+  max-height: 600px;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  padding: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.singleField{
+  text-transform: capitalize;
+  cursor: grabbing;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.singleField:hover{
+  background: #ccc;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.dragActive{
+  background: #ccc;
+}
+
+.single-field{
+  padding: 1ex;
+  margin: 1ex;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.cross{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  vertical-align: center;
+  color: red;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.pull-right{
+  float: right;
+}
+
+.setting{
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
+}
+
+.vertical-align-middle{
+  vertical-align: middle;
+}
+.card-header{
+  background-color: #242d2a !important;
+  color: #fff;
+}
+
+.card-body.toolbox-list .list-group{
+  display: block;
+  padding: 10px;
+}
+.card-body.toolbox-list .list-group .list-group-item{
+  display: inline-block;
+  width: 48%;
+  margin: 4px 1%;
+  padding: 10px;
+  border-left: 3px solid #252d2a;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+}
+.btn-dark{
+  background: #929292 !important;
+}
+.nav-tabs{
+  border-bottom: 1px solid rgba(37,45,42,0.8) !important;  
+}
+.nav-tabs .nav-link{
+  color: #252d2a;
+  border: 1px solid rgba(37,45,42,0.8) !important;
+}
+.nav-tabs .nav-link.active{
+  border-bottom: 1px solid #fff !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.inputCont input[type="checkbox"] {
+  align-self: start;
+  
+}
+
+.submit-button {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #df0f88;
+  color: #701f45;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #f1a2e4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
